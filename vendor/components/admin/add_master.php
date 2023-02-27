@@ -2,12 +2,6 @@
    .abc {
         text-align: center;
     }
-    form{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 50px 0;
-    }
 </style>
 <div>
     <h1 class="abc">Все мастера</h1>
@@ -49,7 +43,7 @@
     </section>
     <h1 class="abc">Добавить мастера</h1>
     <section>
-        <form action="vendor/action/admin/master.php" method="post" enctype="multipart/form-data">
+        <form class="form_adm" action="vendor/action/admin/master.php" method="post" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="Имя" required>
             <input type="text" name="surname" placeholder="Фамилия" required>
             <input type="text" name="stage" placeholder="Стаж" required>
@@ -60,7 +54,7 @@
     </section>
     <h1 class="abc">Добавить оказываемые услуги мастером</h1>
     <section>
-        <form action="vendor/action/admin/master.php" method="post">
+        <form class="form_adm" action="vendor/action/admin/master.php" method="post">
             <span>Выберите мастера</span>
             <select name="master" id="">
                 <? 

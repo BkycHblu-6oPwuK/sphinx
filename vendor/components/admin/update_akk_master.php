@@ -17,26 +17,43 @@ $pup = mysqli_fetch_array($pup);
     <title>Document</title>
 </head>
 <style>
-    form {
+    *{
+        margin: 0
+    }
+    form{
         width: 300px;
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin: 10px 0;
     }
-
-    a {
+    input[type="submit"],button{
+        border: 0;
+        background: #376060;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+    form input:not(input[type="file"],input[type="submit"]){
+        border: none;
+        padding: 5px;
+    }
+    select{
+        border: 1px solid #376060;
+        padding: 5px;
+    }
+    input[type="submit"]:hover,a:hover,button:hover{
+        background: #269191;
+    }
+    a{
         text-decoration: none;
-        width: 300px;
         display: block;
         padding: 10px;
         background-color: #376060;
         color: #ededed;
-        border-radius: 5px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-
-    body>div {
+    body>div{
         padding: 20px;
         width: fit-content;
         margin: auto;
